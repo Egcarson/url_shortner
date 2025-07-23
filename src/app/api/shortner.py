@@ -35,7 +35,7 @@ async def create_short_url(
 
     return new_url
 
-@url_router.get('/urls', status_code=status.HTTP_200_OK, response_model=List[URLRead])
+@url_router.get('/urls/me', status_code=status.HTTP_200_OK, response_model=List[URLRead])
 async def get_urls(
     current_user: User=Depends(get_current_user),
     session: AsyncSession=Depends(get_session)

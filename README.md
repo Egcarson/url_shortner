@@ -64,10 +64,9 @@ docker compose up --build
 ### 🔗 URL Operations
 | Method | Endpoint               | Auth? | Description                  |
 |--------|------------------------|-------|------------------------------|
-| POST   | `/shorten`             | ✅    | Shorten a long URL           |
+| POST   | `/urls`                | ✅    | Shorten a long URL           |
 | GET    | `/urls/{short_code}`   | ❌    | Redirect to original URL     |
 | GET    | `/urls/me`             | ✅    | List URLs by current user    |
-| DELETE | `/urls/{short_code}`   | ✅    | Delete your shortened URL    |
 
 ## ✅ TODO (Next Features)
 - [ ] QR Code support for shortened URLs
